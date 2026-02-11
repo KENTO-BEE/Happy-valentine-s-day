@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #ffb3d9;
+}
+.page1-bg {
+  background: 
+    linear-gradient(rgba(255,184,222,0.5), rgba(245,122,201,0.7)),
+    url('assets/bg.jpg') center/cover no-repeat fixed;
+  min-height: 100vh;
+  position: relative;
+}
+.page2-bg {
+  background: 
+    linear-gradient(135deg, #ffd6ec 60%, #faa5c3), 
+    url('assets/hearts.png') repeat;
+  min-height: 100vh;
+}
+.center-content {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.vday-title {
+  font-size: 3.3rem;
+  text-shadow:
+    0 2px 10px #fdaec9d7,
+    0 8px 25px #ff639f99,
+    0 0px 0 #fff,
+    0 0 40px hotpink;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+  filter: drop-shadow(0 0 2px #f62bc4);
+}
+.subtitle {
+  font-size: 1.4rem;
+  color: #fff4fa;
+  text-shadow: 0 1px 15px #ffb3d9;
+  margin-bottom: 2em;
+}
+.button-go-love {
+  padding: 16px 32px;
+  font-size: 1.35em;
+  color: #fff;
+  background: linear-gradient(90deg, #fa60ba, #fc90c1 80%);
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px #f61a8f77, 0 2px 8px #ffb2ed77;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.13s, box-shadow 0.22s;
+  text-shadow: 0 2px 12px #b4005c77, 0 0 2px #fff;
+}
+.button-go-love:hover {
+  box-shadow: 0 0 40px #ff72c677, 0 4px 12px #cd25a877;
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: 36px;
+}
+.sidebar-photos img {
+  width: 108px;
+  height: 108px;
+  border-radius: 22px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 16px #e34ea3d9;
+  background-color: #fff2fa88;
+}
+.loveletter-content {
+  background: rgba(255, 236, 245, 0.84);
+  border-radius: 32px;
+  box-shadow: 0 4px 56px #ff72ab44;
+  padding: 38px 52px;
+  max-width: 540px;
+  color: #ea1e64;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 16px #ffc5e6cc;
+}
+.loveletter-title {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: #fa5aa6;
+  text-shadow: 0 2px 22px #fff4fc, 0 1px 3px #f7115c74;
+  filter: drop-shadow(0 0 2px #ffafd4);
+}
+.love-text {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  color: #d4185b;
+}
+
+@media (max-width: 650px) {
+  .container { flex-direction: column; }
+  .sidebar-photos { flex-direction: row; margin: 0 0 18px 0; gap: 12px; }
+  .loveletter-content { padding: 22px 10px; }
+}
